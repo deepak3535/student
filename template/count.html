@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block count %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<table style="width:10%">
+  <tbody>
+        <tr>
+    <th>Grade</th>
+    <th>No of stuents</th> 
+  </tr>
+         {% for a in result %}
+                        <tr class="row100 body">
+                            <td>{{ a.grade}}</td>
+                            <td>{{a.dcount}}</td>
+                            <br>
+              {% endfor %}
+          </tbody>
+</table>
+
+</body>
+</html>
+{% endblock count %}

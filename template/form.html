@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<form method="post" action="/student" textalign="center">
+{% csrf_token %}
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="firstname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lastname"><br>
+  <label for="age">Age:</label><br>
+  <input type="integer" id="age" name="age"><br>
+  <label for="grade">Grade:</label><br>
+  <input type="integer" id="grade" name="grade"><br>
+  <label for="address">Address:</label><br>
+  <input type="text" id="address" name="address"><br>
+  <label for="parent_occupation">parent's occupation:</label><br>
+  <input type="text" id="parent_occupation" name="parent_occupation"><br> <br>
+  <button class="btn btn-dark">Submit</button>
+</form>
+{% endblock body %}
+
+
